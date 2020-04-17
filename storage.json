@@ -1,0 +1,11 @@
+{
+    "webhook":{
+        "id":"",
+        "token":"",
+        "name":"GMAIL - Discord"
+    },
+    "mails":[
+        "example@email1.fr",
+        "example@email2.fr"
+    ]
+}
