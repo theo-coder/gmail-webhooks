@@ -11,11 +11,11 @@ This script was created to send webhooks when emails are received from a given l
 
 ### Installation Guide <a id="install"></a>
 
-You first need to create a google account...
-Then go to the [Google Developper Console](https://console.developers.google.com/) and create a new Project
-After this, you can add to the project the Gmail API in the library tab.
-And create an Oauth2 client ID in credentials (Application type : Other)
-Then, download the json file to your project directory
+* You first need to create a google account...
+* Then go to the [Google Developper Console](https://console.developers.google.com/) and create a new Project
+* After this, you can add to the project the Gmail API in the library tab.
+* And create an Oauth2 client ID in credentials (Application type : Other)
+* Then, download the json file to your project directory
 
 ## Built With
 
