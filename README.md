@@ -17,7 +17,7 @@ This script was created to send webhooks when emails are received from a given l
 * And create an Oauth2 client ID in credentials (Application type : Other)
 * Then, download the json file to your project root and rename it `g-credentials.json`
 * Make sure to complete the `storage.json` file before to run
-* And finally, you can launch the script
+* And finally, you can run `npm install` and `node index.js` in the Windows cmd
 
 ## Built With
 
