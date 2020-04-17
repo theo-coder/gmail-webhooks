@@ -6,29 +6,17 @@
 This script was created to send webhooks when emails are received from a given list.
 
 ## Summary
-[lien afficher](#nomAncre)
-[test]()
 
-## Titre <a id="nomAncre"></a>
-In order to play you first need to create a party
-```
-!partie
-```
+[Installation Guide](#install)
 
-Once done, say to all players to run the following command
-```
-!participe
-```
+### Installation Guide <a id="install"></a>
 
-Next you can choose a gamemode
-```
-!mode
-```
+You first need to create a google account...
+Then go to the [Google Developper Console](https://console.developers.google.com/) and create a new Project
+After this, you can add to the project the Gmail API in the library tab.
+And create an Oauth2 client ID in credentials (Application type : Other)
+Then, download the json file to your project directory
 
-And finally play
-```
-!play
-```
 ## Built With
 
 * [Node.js](https://nodejs.org/fr/) - server
