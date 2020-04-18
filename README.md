@@ -8,6 +8,9 @@ This script was created to send webhooks when emails are received from a given l
 ## Summary
 
 [Installation Guide](#install)
+[Built With](#build)
+[Authors](#author)
+[License](#license)
 
 ### Installation Guide <a id="install"></a>
 
@@ -19,16 +22,16 @@ This script was created to send webhooks when emails are received from a given l
 * Make sure to complete the `storage.json` file before to run
 * And finally, you can run `npm install` and `node index.js` in the Windows cmd
 
-## Built With
+### Built With <a id="build"></a>
 
 * [Node.js](https://nodejs.org/fr/) - server
 * [Discord.js](https://discord.js.org/) - Primary module
 
-## Authors
+### Authors <a id="author"></a>
 
 * **Theo-dev** - *Initial work* - [read more](https://github.com/theo-dev)
 * **YeyPiz** - *Initial work* - [read more](https://github.com/YeyPiz)
 
-## License
+### License <a id="license"></a>
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
