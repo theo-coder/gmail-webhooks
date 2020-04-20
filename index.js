@@ -156,22 +156,23 @@ function getRecentEmail(auth) {
                             break;
                     }
                 }
+                if(response['data']['payload']['parts']){
+                    data = response['data']['payload']['parts'][0]['body']['data']
+                    if(data){
+                        buff = new Buffer.from(data, 'base64');
+                        message = buff.toString();
 
-                data = response['data']['payload']['parts'][0]['body']['data']
-                if(data){
-                    buff = new Buffer.from(data, 'base64');
-                    message = buff.toString();
-    
-                    
-                    //tableau js
-                    for(let j=0;j<mailArray.length;j++){
-                        if(author.includes(mailArray[j])){
-                            if(!lastSended.includes(response["data"]["id"])){
-                                if(lastSended.length>=nbResult){
-                                    lastSended.shift()
+
+                        //tableau js
+                        for(let j=0;j<mailArray.length;j++){
+                            if(author.includes(mailArray[j])){
+                                if(!lastSended.includes(response["data"]["id"])){
+                                    if(lastSended.length>=nbResult){
+                                        lastSended.shift()
+                                    }
+                                    send(author,date,subject,message)
+                                    lastSended.push(response["data"]["id"])
                                 }
-                                send(author,date,subject,message)
-                                lastSended.push(response["data"]["id"])
                             }
                         }
                     }
